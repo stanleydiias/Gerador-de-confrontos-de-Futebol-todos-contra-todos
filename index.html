@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon"sizes="180x180"href="/imagens/apple-touch-icon.png">
+    <link rel="manifest"href="/site.webmanifest">
+    <script src="script.js"></script>
+    <title>Torneio de Futebol</title>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="principal">
+                <div class="img-wrapper">
+                <img src="imagem/bg.jpg"alt="">
+            </div>
+                <div class="banner">
+                    <h1>Torneio de Futebol</h1> <br>
+                    <h2>Gerador de confrontos todos contra todos</h2>
+                    <p>Informe os Times:</p>
+                    <textarea cols=60 id="times" rows="10" name="times" maxlength="500" placeholder="Informe os Times e seus Estados separados por ';'          EX: TIME;ESTADO">
+Santa Cruz;Recife
+Palmeiras;São Paulo
+Cruzeiro;Belo Horizonte
+Sport;Recife</textarea><br>
+                <a href="#telaConfronto" onclick="gerar()"><button>gerar confrontos</button></a>
+                </div>                   
+            </div>
+    
+        </header>
+        <div class="container">
+            <div id ="telaConfronto">
+                <div class="img-wrapper">
+                    <img src="imagem/bg.jpg"alt="">
+                </div>
+                <div class="banner02">
+                    <h3> <a href="#telaClassificacao"><button>ver classificação</button></a> <br> Jogos</h3>
+                    <table id="tabelaJogos">    
+                    </table>
+                    <br>      
+                </div> 
+                 
+            </div>
+        </div>
+        
+        <div class="container">
+            <div id ="telaClassificacao">
+                <div class="img-wrapper">
+                    <img src="imagem/bg.jpg"alt="">
+                </div> 
+                <div class="banner03">   
+                        <h3 id="mensagemCampeao"><br></h3>
+                        <br>
+                        <table id = "tabelaClassificacao">
+                                <tr>
+                                <th>Posição</th>
+                                <th>Time</th>
+                                <th>Pontos</th>
+                                <th>Gols</th>
+                                </tr>
+                               
+                            <tbody id="tabelaClassificacao"></tbody>
+                        </table>
+                        <h2 id="mensagemCampeao"></h2>
+                </div>       
+            </div>
+        </div>
+        </div>
+    </div>
+        
+</body>
+
+</html>
